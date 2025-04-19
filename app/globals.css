@@ -16,22 +16,22 @@
     overflow-x: hidden;
     width: 100%;
   }
-  
+
   /* Custom scrollbar styling */
   ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
   }
-  
+
   ::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.02);
   }
-  
+
   ::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0.1);
     border-radius: 4px;
   }
-  
+
   ::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 0, 0, 0.15);
   }
@@ -39,13 +39,23 @@
   /* Refined base typography */
   body {
     @apply font-sans antialiased bg-white text-gray-900;
-    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif;
-    font-feature-settings: "kern", "liga";
+    font-family:
+      -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text',
+      'Helvetica Neue', sans-serif;
+    font-feature-settings: 'kern', 'liga';
     letter-spacing: -0.011em;
     color: #1d1d1f;
-    background-image: 
-      radial-gradient(circle at 80% 10%, rgba(0, 113, 227, 0.02) 0%, transparent 60%),
-      radial-gradient(circle at 20% 80%, rgba(0, 113, 227, 0.01) 0%, transparent 50%);
+    background-image:
+      radial-gradient(
+        circle at 80% 10%,
+        rgba(0, 113, 227, 0.02) 0%,
+        transparent 60%
+      ),
+      radial-gradient(
+        circle at 20% 80%,
+        rgba(0, 113, 227, 0.01) 0%,
+        transparent 50%
+      );
   }
 
   /* Custom serif font for specific headings */
@@ -56,8 +66,15 @@
     font-style: normal;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family:
+      -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue',
+      sans-serif;
     font-weight: 600;
     letter-spacing: -0.021em;
     @apply tracking-tight;
@@ -99,7 +116,7 @@
   a:hover {
     color: #0071e3;
   }
-  
+
   /* Refined text selection styling */
   ::selection {
     background: rgba(0, 113, 227, 0.2);
@@ -191,7 +208,9 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    font-feature-settings:
+      'rlig' 1,
+      'calt' 1;
   }
 }
 
@@ -304,8 +323,9 @@ section {
 
 /* Hero gradient */
 .hero-gradient {
-  background: radial-gradient(circle at 50% 50%, 
-    rgba(0, 113, 227, 0.06), 
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 113, 227, 0.06),
     rgba(255, 255, 255, 0) 70%
   );
 }
@@ -320,8 +340,9 @@ section {
 .section-fade-in {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
-              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transition:
+    opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .section-fade-in.visible {
@@ -333,8 +354,9 @@ section {
 .stagger-item {
   opacity: 0;
   transform: translateY(15px);
-  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transition:
+    opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .stagger-item.visible {
@@ -346,8 +368,9 @@ section {
 .fade-in-section {
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  transition:
+    opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .fade-in-section.is-visible {
@@ -359,7 +382,7 @@ section {
 .image-reveal {
   opacity: 0;
   transform: scale(0.92);
-  transition: 
+  transition:
     opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
     transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -373,7 +396,7 @@ section {
 .text-reveal {
   opacity: 0;
   transform: translateY(10px);
-  transition: 
+  transition:
     opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
     transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }

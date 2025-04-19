@@ -1,11 +1,12 @@
-import { cn } from "@lib/utils";
+import { cn } from '@lib/utils';
 
 /**
  * Typography system based on Apple's design aesthetic
  * Provides consistent text styling throughout the application
  */
 export const typography = {
-  fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", sans-serif',
+  fontFamily:
+    '-apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", sans-serif',
   heading: {
     h1: 'text-5xl md:text-6xl font-semibold tracking-tight leading-tight',
     h2: 'text-4xl md:text-5xl font-semibold tracking-tight leading-tight',
@@ -27,7 +28,7 @@ export const typography = {
     primary: 'text-apple-gray-500',
     secondary: 'text-apple-gray-300',
     accent: 'text-apple-blue-primary',
-  }
+  },
 };
 
 /**
@@ -49,7 +50,7 @@ export const applyTypography = {
   display: {
     large: (className?: string) => cn(typography.display.large, className),
     medium: (className?: string) => cn(typography.display.medium, className),
-  }
+  },
 };
 
 // Apple's preferred easing curves for animations

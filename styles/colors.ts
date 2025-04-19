@@ -38,7 +38,7 @@ export const colors = {
     primary: '#ffffff',
     secondary: '#f5f5f7',
     tertiary: '#e8e8ed',
-  }
+  },
 };
 
 /**
@@ -57,21 +57,39 @@ export const opacities = {
  */
 export const getColor = {
   blue: {
-    primary: (opacity = opacities.solid) => opacity === 1 ? 'apple-blue-primary' : `apple-blue-primary/${opacity}`,
-    hover: (opacity = opacities.solid) => opacity === 1 ? 'apple-blue-hover' : `apple-blue-hover/${opacity}`,
-    light: (opacity = opacities.solid) => opacity === 1 ? 'apple-blue-light' : `apple-blue-light/${opacity}`,
+    primary: (opacity = opacities.solid) =>
+      opacity === 1 ? 'apple-blue-primary' : `apple-blue-primary/${opacity}`,
+    hover: (opacity = opacities.solid) =>
+      opacity === 1 ? 'apple-blue-hover' : `apple-blue-hover/${opacity}`,
+    light: (opacity = opacities.solid) =>
+      opacity === 1 ? 'apple-blue-light' : `apple-blue-light/${opacity}`,
   },
   gray: {
-    50: (opacity = opacities.solid) => opacity === 1 ? 'apple-gray-50' : `apple-gray-50/${opacity}`,
-    100: (opacity = opacities.solid) => opacity === 1 ? 'apple-gray-100' : `apple-gray-100/${opacity}`,
-    200: (opacity = opacities.solid) => opacity === 1 ? 'apple-gray-200' : `apple-gray-200/${opacity}`,
-    300: (opacity = opacities.solid) => opacity === 1 ? 'apple-gray-300' : `apple-gray-300/${opacity}`,
-    400: (opacity = opacities.solid) => opacity === 1 ? 'apple-gray-400' : `apple-gray-400/${opacity}`,
-    500: (opacity = opacities.solid) => opacity === 1 ? 'apple-gray-500' : `apple-gray-500/${opacity}`,
+    50: (opacity = opacities.solid) =>
+      opacity === 1 ? 'apple-gray-50' : `apple-gray-50/${opacity}`,
+    100: (opacity = opacities.solid) =>
+      opacity === 1 ? 'apple-gray-100' : `apple-gray-100/${opacity}`,
+    200: (opacity = opacities.solid) =>
+      opacity === 1 ? 'apple-gray-200' : `apple-gray-200/${opacity}`,
+    300: (opacity = opacities.solid) =>
+      opacity === 1 ? 'apple-gray-300' : `apple-gray-300/${opacity}`,
+    400: (opacity = opacities.solid) =>
+      opacity === 1 ? 'apple-gray-400' : `apple-gray-400/${opacity}`,
+    500: (opacity = opacities.solid) =>
+      opacity === 1 ? 'apple-gray-500' : `apple-gray-500/${opacity}`,
   },
   background: {
-    primary: (opacity = opacities.solid) => opacity === 1 ? 'apple-background-primary' : `apple-background-primary/${opacity}`,
-    secondary: (opacity = opacities.solid) => opacity === 1 ? 'apple-background-secondary' : `apple-background-secondary/${opacity}`,
-    tertiary: (opacity = opacities.solid) => opacity === 1 ? 'apple-background-tertiary' : `apple-background-tertiary/${opacity}`,
-  }
+    primary: (opacity = opacities.solid) =>
+      opacity === 1
+        ? 'apple-background-primary'
+        : `apple-background-primary/${opacity}`,
+    secondary: (opacity = opacities.solid) =>
+      opacity === 1
+        ? 'apple-background-secondary'
+        : `apple-background-secondary/${opacity}`,
+    tertiary: (opacity = opacities.solid) =>
+      opacity === 1
+        ? 'apple-background-tertiary'
+        : `apple-background-tertiary/${opacity}`,
+  },
 };

@@ -18,7 +18,7 @@ export function useIntersectionObserver(
     onlyOnce = false,
     ref,
   } = options;
-  
+
   const [isIntersecting, setIsIntersecting] = useState(false);
   const [wasIntersectedOnce, setWasIntersectedOnce] = useState(false);
   const targetRef = useRef<HTMLElement | null>(null);
@@ -27,12 +27,12 @@ export function useIntersectionObserver(
   useEffect(() => {
     // If we've already intersected once and onlyOnce is true, don't observe anymore
     if (onlyOnce && wasIntersectedOnce) return;
-    
+
     observer.current = new IntersectionObserver(
       ([entry]) => {
         const isElementIntersecting = entry.isIntersecting;
         setIsIntersecting(isElementIntersecting);
-        
+
         if (isElementIntersecting && onlyOnce) {
           setWasIntersectedOnce(true);
         }
@@ -42,7 +42,7 @@ export function useIntersectionObserver(
 
     // Use external ref if provided, otherwise use internal ref
     const targetElement = ref?.current || targetRef.current;
-    
+
     if (targetElement) {
       observer.current.observe(targetElement);
     }

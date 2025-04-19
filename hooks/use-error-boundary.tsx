@@ -10,7 +10,7 @@ export function useErrorBoundary(fallback?: ReactNode) {
   const [key, setKey] = useState(0);
 
   // Reset the error boundary by changing its key
-  const reset = () => setKey(prevKey => prevKey + 1);
+  const reset = () => setKey((prevKey) => prevKey + 1);
 
   // Component to wrap children with error boundary
   const ErrorBoundaryWrapper = ({ children }: { children: ReactNode }) => (
@@ -21,7 +21,7 @@ export function useErrorBoundary(fallback?: ReactNode) {
 
   return {
     ErrorBoundaryWrapper,
-    reset
+    reset,
   };
 }
 

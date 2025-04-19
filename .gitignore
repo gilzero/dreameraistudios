@@ -1,6 +1,80 @@
+# dependencies
 node_modules
-dist
+/.pnp
+.pnp.js
+
+# bun specific
+bun.lockb
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+.next
+
+# production
+/build
+/dist
+
+# misc
 .DS_Store
-server/public
-vite.config.ts.*
-*.tar.gz
+*.pem
+.idea
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*.local
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs
+logs
+*.log
+
+# Cache
+.eslintcache
+.stylelintcache
+
+# Temporary files
+.temp
+.tmp
+.cache
+temp
+tmp
+
+# Turbo
+.turbo
+
+# macOS-specific files
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
